@@ -1,130 +1,116 @@
-/* Genel stil ayarları */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background-color: #f4f4f9;
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-nav {
-    background-color: #555;
-    color: #fff;
-    width: 100%;
-    padding: 0.5rem 0;
-}
-
-nav ul {
-    list-style: none;
+.container {
     display: flex;
-    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
 }
 
-nav ul li {
-    margin: 0 1rem;
+.left, .center, .right {
+    padding: 20px;
+    flex: 1;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.left img {
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
-section {
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
+.contact-info h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
 }
 
-section h2 {
+.contact-info p {
+    margin-top: 10px;
+}
+
+.contact-info a {
     color: #333;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    text-decoration: none;
 }
 
-section p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.5;
+.center h1 {
+    font-size: 3rem;
+    color: #6a3b0d;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    text-align: left;
+.center .subtitle {
+    font-size: 1.2rem;
+    color: #6a3b0d;
+    margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    text-align: left;
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    padding: 0.8rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+.uploader {
+    background-color: #f3d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
     text-align: center;
-    width: 100%;
 }
 
-footer p {
-    font-size: 0.9rem;
+.uploader h2 {
+    color: #6a3b0d;
+    margin-bottom: 15px;
+}
+
+.uploader label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.uploader input, .uploader textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.uploader button {
+    background-color: #6a3b0d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    color: #6a3b0d;
+    margin-bottom: 15px;
+}
+
+.right p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.right strong {
+    color: #6a3b0d;
 }
