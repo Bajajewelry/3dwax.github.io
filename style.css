@@ -36,6 +36,7 @@ nav {
     background-color: #555;
     color: #fff;
     width: 100%;
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -68,12 +69,19 @@ section {
 section h2 {
     color: #333;
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 section p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    text-align: left;
 }
 
 form {
@@ -102,6 +110,7 @@ form button {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -114,8 +123,6 @@ footer {
     padding: 1rem 0;
     text-align: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 footer p {
