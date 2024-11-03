@@ -60,16 +60,19 @@ body {
 .center-section h1 {
     font-size: 3rem;
     color: #6a3b0d;
+    text-align: center;
 }
 
 .center-section .subtitle {
     font-size: 1.2rem;
     color: #6a3b0d;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .uploader {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     background-color: #f3d4d4;
     padding: 15px;
     border-radius: 8px;
