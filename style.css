@@ -59,39 +59,14 @@ body {
 }
 
 .uploader {
-    background-color: #f3d4d4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+    /* Arka plan ve kenarlık kaldırıldı */
+    background-color: transparent;
+    border: none;
     text-align: center;
 }
 
 .uploader h2 {
-    color: #6a3b0d;
-    margin-bottom: 15px;
-}
-
-.uploader label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-.uploader input, .uploader textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.uploader button {
-    background-color: #6a3b0d;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    display: none; /* Başlık tamamen kaldırıldı */
 }
 
 .right img {
