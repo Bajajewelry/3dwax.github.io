@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #ffffff; /* Beyaz arka plan */
     display: flex;
     justify-content: center;
     color: #333;
@@ -14,17 +14,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Orta bölümü daha geniş yaptık */
+    grid-template-columns: 1fr auto 2fr auto 1fr; /* Ayırıcılar için ek kolonlar */
     gap: 20px;
     max-width: 1200px;
     padding: 20px;
+    align-items: start;
 }
 
 .left-section, .center-section, .right-section {
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -74,8 +72,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 15px;
-    border-radius: 8px;
-    width: 100%; /* Uploader tam genişlikte */
+    width: 100%; /* Tam genişlik */
 }
 
 .qr-code {
@@ -97,4 +94,11 @@ body {
 
 .right-section strong {
     color: #6a3b0d;
+}
+
+/* Ayırıcı Çizgi */
+.divider {
+    width: 2px;
+    background-color: #ccc;
+    height: 100%;
 }
