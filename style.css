@@ -6,97 +6,65 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Beyaz arka plan */
+    background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: #333;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    padding: 20px;
-    gap: 20px;
-    align-items: center;
-}
-
-.left-section, .right-section, .uploader-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Sol hizalama */
-    width: 100%; /* Tam genişlik */
-}
-
-.left-section h2, .right-section h2 {
-    font-size: 1.5rem;
-    color: #6a3b0d;
-    margin-bottom: 20px;
-}
-
-.main-image {
-    max-width: 50%; /* Görüntüyü daha küçük yapmak için */
-    margin: 0 20px 20px 0;
-    border-radius: 8px;
-    float: left; /* Görüntüyü sola alır */
-}
-
-.contact-info h3 {
-    font-size: 1.3rem;
-    color: #6a3b0d;
+.header {
+    text-align: center;
     margin-top: 20px;
 }
 
-.contact-info p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.contact-info a {
-    color: #333;
-    text-decoration: none;
-}
-
-.uploader-section h1 {
-    font-size: 3rem;
+.header h1 {
+    font-size: 4rem; /* İki kat büyük */
     color: #6a3b0d;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-.uploader-section .subtitle {
-    font-size: 1.2rem;
+.header .subtitle {
+    font-size: 1.5rem;
     color: #6a3b0d;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 30px;
+}
+
+.uploader-container {
+    position: relative;
+    width: 70%; /* İsteğe bağlı olarak değiştirilebilir */
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .uploader {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    width: 100%;
+    background-color: #f3d4d4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.qr-code {
-    max-width: 100px;
-    margin: 0 auto 20px;
+.image-left {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
 }
 
-.right-section h2 {
-    font-size: 1.3rem;
-    color: #6a3b0d;
-    margin-bottom: 15px;
+.image-left img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-.right-section p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #333;
+.image-right {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
 }
 
-.right-section strong {
-    color: #6a3b0d;
+.image-right img {
+    max-width: 100%;
+    border-radius: 8px;
 }
