@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; /* Beyaz arka plan */
     display: flex;
     justify-content: center;
     color: #333;
@@ -26,8 +26,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%; /* Full width */
+    text-align: left; /* Sol hizalama */
+    width: 100%; /* Tam genişlik */
 }
 
 .left-section h2, .right-section h2 {
@@ -37,9 +37,10 @@ body {
 }
 
 .main-image {
-    max-width: 100%;
-    margin: 20px 0;
+    max-width: 50%; /* Görüntüyü daha küçük yapmak için */
+    margin: 0 20px 20px 0;
     border-radius: 8px;
+    float: left; /* Görüntüyü sola alır */
 }
 
 .contact-info h3 {
